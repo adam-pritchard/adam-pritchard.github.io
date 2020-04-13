@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Using KeyboardAvoidingView with React Navigation"
+render_with_liquid: false
 ---
 
-When using React Navigation the status bar and header cause `KeyboardAvoidingView` to layout incorrectly.
+When using React Navigation, the status bar and header can cause `KeyboardAvoidingView` to adjust the layout incorrectly when the keyboard is present.
 
 To fix this you need to calculate the offset caused by the status bar and header and provide it to the `KeyboardAvoidingView` via its `keyboardVerticalOffset` prop.
 
